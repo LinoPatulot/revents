@@ -1,16 +1,17 @@
-import logo from '../../logo.svg';
+import { Fragment } from 'react';
+import { Button, Container } from 'semantic-ui-react';
+import EventDashboard from '../../feature/events/eventDashboard/EventDashboard';
+import NavBar from '../../feature/nav/NavBar';
 import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Welcome to Revents
-        </p>
-      </header>
-    </div>
+    <Fragment>
+      <NavBar/>
+      <Container className='main'> 
+        <EventDashboard />
+      </Container>
+    </Fragment>
   );
 }
 
